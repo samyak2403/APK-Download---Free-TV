@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APK Download - Free TV</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->  
+    <div class="bg-animation">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+    
+    <div class="container">
+        <div class="download-card">
+            <div class="app-icon">
+                <div class="icon-shine"></div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M21 6h-7.59l3.29-3.29L16 2l-4 4-4-4-.71.71L10.59 6H3c-1.1 0-2 .89-2 2v12c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.11-.9-2-2-2zm0 14H3V8h18v12zM9 10v8l7-4z"/>
+                </svg>
+            </div>
+            
+            <h1 class="app-title">Free TV App</h1>
+            <p class="app-description">Download the latest version of Free TV app for Android</p>
+            
+            <div class="version-info">
+                <span class="version-badge">
+                    <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Version <span id="version">Loading...</span></span>
+                </span>
+                <span class="size-badge">
+                    <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Size: <span id="fileSize">Loading...</span></span>
+                </span>
+            </div>
+            
+            <button id="downloadBtn" class="download-button">
+                <span class="button-gradient"></span>
+                <span class="button-content">
+                    <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                    </svg>
+                    <span class="button-text">Download APK</span>
+                </span>
+            </button>
+            
+            <div id="downloadProgress" class="progress-container" style="display: none;">
+                <div class="progress-bar">
+                    <div id="progressBar" class="progress-fill">
+                        <div class="progress-shine"></div>
+                    </div>
+                </div>
+                <p class="progress-text">Preparing download...</p>
+            </div>
+            
+            <div class="release-notes">
+                <h3>Release Notes</h3>
+                <div id="releaseNotes">Loading release information...</div>
+            </div>
+            
+            <div class="instructions">
+                <h3>Installation Instructions</h3>
+                <ol>
+                    <li>Download the APK file</li>
+                    <li>Enable "Install from Unknown Sources" in your device settings</li>
+                    <li>Open the downloaded APK file</li>
+                    <li>Follow the installation prompts</li>
+                    <li>Enjoy Free TV!</li>
+                </ol>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2024 Free TV App. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
