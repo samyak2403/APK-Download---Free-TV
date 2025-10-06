@@ -117,7 +117,7 @@ function handleDownload() {
         // Create temporary link and trigger download
         const link = document.createElement('a');
         link.href = downloadUrl;
-        link.download = latestRelease?.assets?.find(a => a.name.includes('.apk'))?.name || 'app.apk';
+        link.download = latestRelease?.assets?.find(a => a.name.includes('.apk'))?.name || 'app-release.apk';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -215,4 +215,5 @@ document.addEventListener('DOMContentLoaded', () => {
         downloadBtn.style.transition = 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)';
     });
 });
+
 
