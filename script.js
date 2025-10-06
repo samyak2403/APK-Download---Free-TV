@@ -1,6 +1,6 @@
 // Configuration - Replace these with your GitHub repository details
-const GITHUB_USERNAME = 'yourusername'; // Replace with your GitHub username
-const GITHUB_REPO = 'your-repo-name';   // Replace with your repository name
+const GITHUB_USERNAME = 'samyak2403'; // Replace with your GitHub username
+const GITHUB_REPO = 'Download---Free-TV';   // Replace with your repository name
 const APK_FILENAME_PATTERN = '.apk';     // Pattern to match APK files
 
 // Global variables
@@ -19,7 +19,7 @@ function formatBytes(bytes) {
 // Fetch latest release from GitHub
 async function fetchLatestRelease() {
     try {
-        const apiUrl = `https://api.github.com/repos/${samyak2403}/${Download---Free-TV}/releases/latest`;
+        const apiUrl = `https://api.github.com/repos/${GITHUB_USERNAME}/${GITHUB_REPO}/releases/latest`;
         const response = await fetch(apiUrl);
         
         if (!response.ok) {
@@ -77,33 +77,10 @@ async function fetchLatestRelease() {
         document.getElementById('version').textContent = 'N/A';
         document.getElementById('fileSize').textContent = 'N/A';
         document.getElementById('releaseNotes').innerHTML = 
-            '<p style="color: #e74c3c;">Unable to load release information. Please check your configuration or try again later.</p>';
-        
-        // Show demo mode for testing
-        showDemoMode();
+            '<p style="color: #e74c3c;">Unable to load release information. Please check your GitHub repository configuration or try again later.</p>';
     }
 }
 
-// Demo mode with sample data (for testing without actual GitHub repo)
-function showDemoMode() {
-    document.getElementById('version').textContent = 'v1.0.0 (Demo)';
-    document.getElementById('fileSize').textContent = '45.2 MB';
-    document.getElementById('releaseNotes').innerHTML = `
-        <ul>
-            <li>Initial release</li>
-            <li>Stream live TV channels</li>
-            <li>Beautiful user interface</li>
-            <li>Support for multiple languages</li>
-        </ul>
-        <p style="margin-top: 10px; color: #e74c3c; font-size: 12px;">
-            <strong>Demo Mode:</strong> Update the GitHub configuration in script.js with your repository details.
-        </p>
-    `;
-    
-    // Use a demo download URL
-    downloadUrl = '#';
-    document.getElementById('downloadBtn').disabled = false;
-}
 
 // Handle download button click
 function handleDownload() {
