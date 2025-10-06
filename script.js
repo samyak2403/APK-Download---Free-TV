@@ -19,7 +19,7 @@ function formatBytes(bytes) {
 // Fetch latest release from GitHub
 async function fetchLatestRelease() {
     try {
-        const apiUrl = `https://api.github.com/repos/${GITHUB_USERNAME}/${GITHUB_REPO}/releases/latest`;
+        const apiUrl = `https://api.github.com/repos/${samyak2403}/${Download---Free-TV}/releases/latest`;
         const response = await fetch(apiUrl);
         
         if (!response.ok) {
