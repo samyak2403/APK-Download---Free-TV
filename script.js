@@ -1,6 +1,6 @@
 // Configuration - Replace these with your GitHub repository details
 const GITHUB_USERNAME = 'samyak2403'; // Replace with your GitHub username
-const GITHUB_REPO = 'Download---Free-TV';   // Replace with your repository name
+const GITHUB_REPO = 'APK-Download---Free-TV';   // Replace with your repository name
 const APK_FILENAME_PATTERN = '.apk';     // Pattern to match APK files
 
 // Global variables
@@ -215,5 +215,6 @@ document.addEventListener('DOMContentLoaded', () => {
         downloadBtn.style.transition = 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)';
     });
 });
+
 
 
